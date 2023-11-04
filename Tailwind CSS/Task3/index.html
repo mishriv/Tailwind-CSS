@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3::Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+  <!-- i have made this by tailwind with vite but adding this cdn script because css is not rendering on double clicking on index.html file or opening with live server  -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<!-- Problem statement 
+
+Create a non-responsive dashboard using Tailwind CSS, where the dashboard should include a sidebar
+navigation menu and a main contain area. (Making it responsive is optional).
+
+Feel free to use any icons from any place, Your goal is to design a visually appealing and user-friendly
+dashboard interface that is not responsive.
+ -->
+
+<body class="bg-slate-100">
+    <!-- sidebar -->
+    <aside class="bg-gray-900 text-gray-400 h-screen w-64 fixed">
+        <div class="flex flex-col h-full">
+            <!-- sidebar header  -->
+            <div class="flex items-center justify-center p-5 text-3xl font-semibold text-white">Dashboard</div>
+
+            <!-- side bar navigation -->
+            <nav class="flex-1">
+                <ul class="space-y-1">
+                    <li class="px-4 py-2 hover:bg-gray-800 hover:text-gray-100">
+                        <a href="#" class="flex items-center gap-4"><img src="media/dashboard.png" width="30px"><span
+                                class="text-md">Dashboard</span></a>
+                    </li>
+                    <li class="px-4 py-2 hover:bg-gray-800 hover:text-gray-100">
+                        <a href="#" class="flex items-center gap-4"><img src="media/team.png" width="30px"><span
+                                class="text-md">Team</span></a>
+                    </li>
+                    <li class="px-4 py-2 hover:bg-gray-800 hover:text-gray-100">
+                        <a href="#" class="flex items-center gap-4"><img src="media/project.png" width="30px"><span
+                                class="text-md">Project</span></a>
+                    </li>
+                    <li class="px-4 py-2 hover:bg-gray-800 hover:text-gray-100">
+                        <a href="#" class="flex items-center gap-4"><img src="media/calender.png" width="30px"><span
+                                class="text-md">Calendar</span></a>
+                    </li>
+                    <li class="px-4 py-2 hover:bg-gray-800 hover:text-gray-100">
+                        <a href="#" class="flex items-center gap-4"><img src="media/doc.png" width="30px"><span
+                                class="text-md">Document</span></a>
+                    </li>
+                    <li class="px-4 py-2 hover:bg-gray-800">
+                        <a href="#" class="flex items-center gap-4"><img src="media/reports.png" width="30px"><span
+                                class="text-md">Reports</span></a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- your Teams -->
+
+            <div class="py-4 text-gray-400">
+                <span class="px-4 py-2 font-semibold">Your Teams</span>
+                <ul class="mt-2 space-y-1">
+                    <li class="px-4 py-1 hover:bg-gray-800 hover:text-gray-100">
+                        <a href="#" class="flex items-center gap-4">
+                            <img src="media/team-b.png" width="22px">
+                            <span>PW Skills</span>
+                        </a>
+                    </li>
+                    <li class="px-4 py-1 hover:bg-gray-800 hover:text-gray-100">
+                        <a href="#" class="flex items-center gap-4">
+                            <img src="media/team-b.png" width="20px">
+                            <span>PW Labs</span>
+                        </a>
+                    </li>
+                    <li class="px-4 py-1 hover:bg-gray-800 hover:text-gray-100">
+                        <a href="#" class="flex items-center gap-4">
+                            <img src="media/team-b.png" width="20px">
+                            <span>PW - IOI</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main contant -->
+    <main class="ml-64 p-4">
+        <!-- header  -->
+        <header class="flex justify-between items-center bg-white rounded-lg py-3 px-6 shadow-md">
+            <div class="flex items-center space-x-4">
+                <img src="media/profile.png" width="20px" class="hover:scale-110 ">
+                <span class="ml-2 text-lg">Profile</span>
+            </div>
+            <div class="flex space-x-4 ">
+                <img src="media/search.png" width="20px" class="hover:scale-110 hover:cursor-pointer">
+                <img src="media/bell.png" width="20px" class="hover:scale-110 hover:cursor-pointer">
+            </div>
+        </header>
+
+        <!-- add content  -->
+    </main>
+
+</body>
+
+</html>

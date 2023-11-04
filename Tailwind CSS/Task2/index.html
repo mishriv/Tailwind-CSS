@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Galary ::Task2::</title>
+    <link rel="stylesheet" href="style.css">
+    
+<!-- i have made this by tailwind with vite but adding this cdn script because css is not rendering on double clicking on index.html file or opening with live server  -->
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!-- Problem statement -
+
+Create a responsive image gallery using Tailwind CSS. The gallery should display a grid of images that adjust
+their size and layout based on the screen size -->
+
+<body class="bg-gray-400">
+    <div class="container mx-auto p-5">
+        <!-- heading -->
+        <h2 class="text-2xl font-sans font-semibold  mb-4 text-white">IMAGE GALARY</h2>
+        <!-- responsive grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- images -->
+            <div class="bg-white rounded-md overflow-hidden shadow-lg ">
+                <img src="https://img.freepik.com/free-photo/young-happy-woman-with-good-idea-sign-white-shirt-full-portrait_186202-4377.jpg?w=360&t=st=1698958658~exp=1698959258~hmac=466a7126626a9092d912b29655bf24a4dc11443356589497bbba6d815523b6d7"
+                    alt="post1" class="w-full hover:scale-105 transform transition-transform duration-300">
+            </div>
+            <div class="bg-white rounded-md overflow-hidden shadow-md">
+                <img src="https://img.freepik.com/free-photo/young-happy-woman-with-good-idea-sign-white-shirt-full-portrait_186202-4377.jpg?w=360&t=st=1698958658~exp=1698959258~hmac=466a7126626a9092d912b29655bf24a4dc11443356589497bbba6d815523b6d7"
+                    alt="post2" class="w-full hover:scale-105 transform transition-transform duration-300">
+            </div>
+            <div class="bg-white rounded-md overflow-hidden shadow-md ">
+                <img src="https://img.freepik.com/free-photo/young-happy-woman-with-good-idea-sign-white-shirt-full-portrait_186202-4377.jpg?w=360&t=st=1698958658~exp=1698959258~hmac=466a7126626a9092d912b29655bf24a4dc11443356589497bbba6d815523b6d7"
+                    alt="post3" class="w-full hover:scale-105 transform transition-transform duration-300">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

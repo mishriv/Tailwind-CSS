@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <link rel="stylesheet" href="style.css">
+
+<!-- i have made this by tailwind with vite but adding this cdn script because css is not rendering on double clicking on index.html file or opening with live server  -->
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!-- Problem statement -
+Create a User login page interface that closely resembles the provided image using Tailwind CSS. The goal is
+to ensure that your implementation captures every visual detail and layout aspect depicted in the image while
+maintaining a full mobile responsiveness. -->
+<body class="max-w-[1440px] m-auto h-screen items-center justify-center">
+    
+    <div class="container flex items-center justify-center h-full gap-5 px-10">
+        <!-- login -->
+        <div class="text-center mx-auto my-auto ">
+            <h1 class="font-sans text-4xl m-2">Login</h1>
+            <p class="text-slate-500 text-sm text-center">Enter your credential to access your account</p>
+            <!-- login button  -->
+            <div class="w-full py-5">
+                <button
+                    class="flex flex-row items-center justify-center border border-slate-400 rounded-sm p-4 mx-auto w-full m-5 gap-4">
+                    <img src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA"
+                        width="20px" alt="google">
+                    <span>Login with google</span>
+                </button>
+            </div>
+
+            <!-- OR -->
+            <div class="flex items-center w-full gap-4">
+                <div class="w-full lg:w-44 h-[0.5px] bg-slate-500"></div>
+                <p>Or</p>
+                <div class="w-full lg:w-44 h-[0.5px] bg-slate-500"></div>
+            </div>
+            <!-- input fied/ form -->
+            <form class="flex flex-col justify-start items-start">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="fname" placeholder="email@gmail.com"
+                    class="w-full border border-slate-400 rounded-sm p-2"><br>
+
+                <label for="password" class=" flex w-full justify-between"><span>Password</span>
+                    <span><a href="#" class="text-blue-500 text-left">Forget Password?</a></span>
+                </label>
+                <input type="password" id="password" name="password" placeholder="Password"
+                    class="w-full border border-slate-400 rounded-sm p-2"><br>
+                <button type="submit" class="text-white  w-full bg-blue-500 py-2 rounded-sm mx-auto ">Login</button>
+
+                <p class="text-slate-400 mx-auto py-2">Don't have an account? <a href="#" class="text-black">Register
+                        here</a></p>
+
+            </form>
+
+            <!-- right side of container image -->
+        </div>
+        <div class="hidden lg:block self-end w-[90%] xl:w-auto "><img class="h-[90vh] mx-auto"
+                src="https://img.freepik.com/free-photo/young-happy-woman-with-good-idea-sign-white-shirt-full-portrait_186202-4377.jpg?w=360&t=st=1698867552~exp=1698868152~hmac=9e2954f11738e9fd37d4646dd398dbdf9891fc7b1e2e109734f5feafc37f7cda"
+                alt="image"></div>
+    </div>
+
+
+</body>
+
+</html>
